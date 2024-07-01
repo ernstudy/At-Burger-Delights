@@ -42,12 +42,17 @@ header {
   transition: all 0.5s ease;
 }
 
-.logo {
-  width: 65px;
+header .logo {
+  width: 60px;
 }
 
-.logo img {
+header .logo img {
   width: 100%;
+}
+
+header.stcky {
+  background: var(--other-color);
+  padding: 12px 8%;
 }
 
 .navlist {
@@ -132,7 +137,7 @@ span {
   color: var(--main-color);
 }
 
-.btn {
+.home .btn {
   display: inline-block;
   padding: 15px 30px;
   background: var(--other-color);
@@ -144,19 +149,19 @@ span {
   transition: all ease 0.5s;
 }
 
-.btn:hover {
+.home .btn:hover {
   background: var(--main-color);
   color: var(--bg-color);
   box-shadow: 0 1px 10px var(--main-color);
 }
 
-.btn i {
+.home .btn i {
   font-size: 22px;
   vertical-align: middle;
   margin-left: 9px;
 }
 
-.btn2 {
+.home .btn2 {
   display: inline-block;
   margin-left: 30px;
   border-bottom: 3px solid var(--main-color);
@@ -167,13 +172,8 @@ span {
   transition: all ease 0.5s;
 }
 
-.btn2:hover {
+.home .btn2:hover {
   transform: scale(1.1) translateX(12px);
-}
-
-header.stcky {
-  background: var(--other-color);
-  padding: 12px 8%;
 }
 
 /* container */
@@ -589,3 +589,26 @@ footer p a {
 /* section{
     padding: 70px 12% 60px;
  } */
+
+@media (max-width: 500px) {
+  header {
+    padding: 10px 3%;
+  }
+
+  header.stcky {
+    padding: 8px 2%;
+  }
+
+  .home .btn {
+    margin-bottom: 20px;
+  }
+
+  header .logo {
+    width: 50px;
+  }
+
+  .nav-icon {
+    padding: 4px 8px;
+    box-shadow: #ff9f0d 0 1px 10px;
+  }
+}
