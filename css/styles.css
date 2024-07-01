@@ -121,6 +121,10 @@ section {
   gap: 2rem;
 }
 
+.home-image {
+  width: 100%;
+}
+
 .home-image img {
   width: 100%;
   height: auto;
@@ -137,7 +141,7 @@ span {
   color: var(--main-color);
 }
 
-.home .btn {
+.btn {
   display: inline-block;
   padding: 15px 30px;
   background: var(--other-color);
@@ -149,19 +153,19 @@ span {
   transition: all ease 0.5s;
 }
 
-.home .btn:hover {
+.btn:hover {
   background: var(--main-color);
   color: var(--bg-color);
   box-shadow: 0 1px 10px var(--main-color);
 }
 
-.home .btn i {
+.btn i {
   font-size: 22px;
   vertical-align: middle;
   margin-left: 9px;
 }
 
-.home .btn2 {
+.btn2 {
   display: inline-block;
   margin-left: 30px;
   border-bottom: 3px solid var(--main-color);
@@ -172,7 +176,7 @@ span {
   transition: all ease 0.5s;
 }
 
-.home .btn2:hover {
+.btn2:hover {
   transform: scale(1.1) translateX(12px);
 }
 
@@ -507,10 +511,6 @@ footer p a {
   .container {
     padding: 30px 4% 50px;
   }
-
-  .home-image {
-    min-width: 380px;
-  }
 }
 
 @media (max-width: 1230px) {
@@ -590,13 +590,13 @@ footer p a {
     padding: 70px 12% 60px;
  } */
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
-    padding: 10px 3%;
+    padding: 12px 4%;
   }
 
   header.stcky {
-    padding: 8px 2%;
+    padding: 10px 3%;
   }
 
   .home .btn {
@@ -610,5 +610,9 @@ footer p a {
   .nav-icon {
     padding: 4px 8px;
     box-shadow: #ff9f0d 0 1px 10px;
+  }
+
+  section {
+    padding: 50px 3% 50px;
   }
 }
